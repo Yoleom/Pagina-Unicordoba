@@ -1,0 +1,271 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Universidad de Córdoba</title>
+    <link rel="stylesheet" href="styles.css">
+    <style>
+        a {
+            color: inherit; 
+            text-decoration: none; 
+        }
+
+        a:hover {
+            color: #67A65E; 
+        }
+
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            background: #f5f5f5;
+        }
+        .top-bar-container {
+            background: #67A65E;
+            padding: 4px 0;
+        }
+        .top-bar {
+            background: #f5f5f5;
+            padding: 10px 50px;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            flex-wrap: wrap;
+        }
+        .top-bar ul {
+            list-style: none;
+            padding: 0;
+            margin: 0;
+            display: flex;
+            flex-wrap: wrap;
+            gap: 15px;
+        }
+        .top-bar ul li {
+            color: #67A65E;
+            cursor: pointer;
+        }
+        .nav-container {
+            background: #fff;
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+            padding: 10px 50px;
+        }
+        .nav-container img {
+            height: 50px;
+        }
+        nav ul {
+            list-style: none;
+            padding: 0;
+            margin: 0;
+            display: flex;
+            gap: 20px;
+        }
+        nav ul li {
+            font-weight: bold;
+            color: black;
+            cursor: pointer;
+        }
+        .estudiantes-container {
+            background-color: #F4F4F4;
+            padding: 40px;
+            text-align: left;
+            color: black;
+            font-weight: bold;
+            padding-left: 30px;
+            font-size: 50px;
+        }
+        .submenu-container {
+            background-color: #EFEFEF;
+            display: flex;
+            justify-content: center;
+            padding: 10px 0;
+            flex-wrap: wrap;
+        }
+        .submenu-container ul {
+            list-style: none;
+            display: flex;
+            gap: 15px;
+            padding: 0;
+            margin: 0;
+        }
+        .submenu-container ul li {
+            background: #EFEFEF;
+            padding: 5px 10px;
+            border: 1px solid #ddd;
+            cursor: pointer;
+        }
+        .container {
+            display: flex;
+            max-width: 1200px;
+            margin: 20px auto;
+            gap: 20px;
+        }
+        .column {
+            background: white;
+            padding: 15px;
+            border-radius: 5px;
+            box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.1);
+            flex: 1;
+        }
+        .column h2 {
+            background: #67A65E;
+            color: white;
+            padding: 10px;
+            text-align: center;
+            margin: -15px -15px 15px -15px;
+            border-top-left-radius: 5px;
+            border-top-right-radius: 5px;
+        }
+        .table-container {
+            width: 100%;
+        }
+        table {
+            width: 100%;
+            border-collapse: collapse;
+            font-size: 14px;
+        }
+        th, td {
+            border: 1px solid #ddd;
+            padding: 8px;
+            text-align: left;
+        }
+        th {
+            background: #67A65E;
+            color: white;
+        }
+        .highlight {
+            font-weight: bold;
+            color: #D10000;
+        }
+        .social-icons {
+    display: flex;
+    justify-content: flex-end; /* Alinea los iconos a la derecha */
+    align-items: center;
+    gap: 10px; /* Espaciado entre iconos */
+    max-width: 300px; /* Ajusta el ancho para que no ocupen toda la pantalla */
+}
+.social-icons img {
+    width: 30px; /* Ajusta el tamaño de los iconos */
+    height: auto;
+}
+
+
+
+
+        .navbar {
+            width: 100%;
+            background-color: #f0f0f0;
+            padding: 10px 0;
+            text-align: center;
+        }
+        .navbar a {
+            margin: 0 15px;
+            text-decoration: none;
+            font-weight: bold;
+            color: #000;
+        }
+        .document-container {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            margin-top: 20px;
+            width: 100%;
+        }
+        .document-container img {
+            max-width: 80%;
+            height: auto;
+            border: 1px solid #ddd;
+            box-shadow: 2px 2px 10px rgba(0, 0, 0, 0.1);
+        }
+
+
+
+    </style>
+</head>
+<body>
+    <header>
+        <div class="top-bar-container">
+            <div class="top-bar">
+                <ul>
+                    <a href="aspirantes.html"><li>Aspirantes</li></a>
+                    <a href="estudiantes.html"><li>Estudiantes</li></a>
+                    <a href="egresados.html"><li>Egresados</li></a>
+                    <a href="docentes.html"><li>Docentes</li></a>
+                    <li>Administrativos</li>
+                    <li>Bienestar</li>
+                    <li>Campus Virtual</li>
+                    <li>Academusoft</li>
+                    <li>Centro de Idiomas</li>
+                    <li>Biblioteca</li>
+                    <li>Pagos en línea</li>
+                    <li>Gov.co</li>
+                    <li>Transparencia</li>
+                </ul>
+                <div class="social-icons">
+                    <a href="#"><img src="imagenes/facebook.png" alt="Facebook"></a>
+                    <a href="#"><img src="imagenes/twitter.png" alt="Twitter"></a>
+                    <a href="#"><img src="imagenes/youtube.png" alt="YouTube"></a>
+                    <a href="#"><img src="imagenes/instagram.png"alt="Instagram"></a>
+                    <a href="#"><img src="imagenes/tiktok.png" alt="TikTok"></a>         
+                </div>
+            </div>
+        </div>
+        <div class="nav-container">
+            <a href="index.html">
+                <img src="/imagenes/logouniversidad.png" alt="Universidad de Córdoba Logo">
+            </a>
+            <nav>
+                <ul>
+                    <li>INSTITUCIONAL</li>
+                    <li>ACADEMIA</li>
+                    <li>INVESTIGACIÓN</li>
+                    <li>EXTENSIÓN</li>
+                    <li>ADMISIONES</li>
+                    <li>INTERNACIONALIZACIÓN</li>
+                </ul>
+            </nav>
+        </div>
+        <div class="estudiantes-container">ESTUDIANTES</div>
+        <div class="submenu-container">
+            <ul>
+                <li>Inicio</li>
+                <li>Campus Virtual</li>
+                <li>Bases de datos</li>
+                <li>Calendario</li>
+                <li>Tu Correo</li>
+                <li>Convocatorias</li>
+                <li>Grados</li>
+                <li>Actualiza tus datos</li>
+                <li>Servicios Tic</li>
+                <li>Certificaciones</li>
+                <li>Diferidos</li>
+                <li>Biblioteca</li>
+                <li>Bienestar</li>
+            </ul>
+        </div>
+    </header>
+
+    <div class="nuevo-contenido" style="text-align: center;">
+        <h2>
+            <span style="color: #008000;">Calendario Académico – Oferta Académica</span> – 
+            <span style="color: #FF6600;">Pregrado – Postgrado</span>
+        </h2>
+    </div>
+    
+    <div class="navbar">
+        <a href="#">COMUNICADO 2</a>
+        <a href="#">COMUNICADO</a>
+        <a href="#">GRADOS SOLEMNES</a>
+        <a href="#">GRADOS PRIVADOS</a>
+        <a href="#">CONVOCATORIA</a>
+        <a href="#">CONVOCATORIA ANTERIOR</a>
+        <a href="#">ICETEX</a>
+    </div>
+    
+    <div class="document-container">
+        <embed src="COMUNICADO.pdf" type="application/pdf" width="80%" height="600px" />
+</div>
+</body>
+</html>

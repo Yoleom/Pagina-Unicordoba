@@ -1,0 +1,230 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Universidad de Córdoba</title>
+    <link rel="stylesheet" href="styles.css">
+    <style>
+		     a {
+    color: inherit; 
+    text-decoration: none; 
+}
+
+a:hover {
+    color: #67A65E; 
+}
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            background: #f5f5f5;
+        }
+        .top-bar-container {
+            background: #67A65E;
+            padding: 4px 0;
+        }
+        .top-bar {
+            background: #f5f5f5;
+            padding: 10px 50px;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            flex-wrap: wrap;
+        }
+        .top-bar ul {
+            list-style: none;
+            padding: 0;
+            margin: 0;
+            display: flex;
+            flex-wrap: wrap;
+            gap: 15px;
+        }
+        .top-bar ul li {
+            color: #67A65E;
+            cursor: pointer;
+        }
+        .nav-container {
+            background: #fff;
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+            padding: 10px 50px;
+        }
+        .nav-container img {
+            height: 50px;
+        }
+        nav ul {
+            list-style: none;
+            padding: 0;
+            margin: 0;
+            display: flex;
+            gap: 20px;
+        }
+        nav ul li {
+            font-weight: bold;
+            color: black;
+            cursor: pointer;
+        }
+        .docentes-container {
+            background-color: #63BA00;
+            padding: 10px;
+            text-align: left;
+            color: black;
+            font-weight: bold;
+            padding-left: 50px;
+        }
+        .submenu-container {
+            background-color: #EFEFEF;
+            display: flex;
+            justify-content: center;
+            padding: 10px 0;
+            flex-wrap: wrap;
+        }
+        .submenu-container ul {
+            list-style: none;
+            display: flex;
+            gap: 15px;
+            padding: 0;
+            margin: 0;
+        }
+        .submenu-container ul li {
+            background: #EFEFEF;
+            padding: 5px 10px;
+            border: 1px solid #ddd;
+            cursor: pointer;
+        }
+        .container {
+            display: flex;
+            max-width: 1200px;
+            margin: 20px auto;
+            gap: 20px;
+        }
+        .column {
+            background: white;
+            padding: 15px;
+            border-radius: 5px;
+            box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.1);
+            flex: 1;
+        }
+        .column h2 {
+            background: #67A65E;
+            color: white;
+            padding: 10px;
+            text-align: center;
+            margin: -15px -15px 15px -15px;
+            border-top-left-radius: 5px;
+            border-top-right-radius: 5px;
+        }
+        .table-container {
+            width: 100%;
+        }
+        table {
+            width: 100%;
+            border-collapse: collapse;
+            font-size: 14px;
+        }
+        th, td {
+            border: 1px solid #ddd;
+            padding: 8px;
+            text-align: left;
+        }
+        th {
+            background: #67A65E;
+            color: white;
+        }
+        .highlight {
+            font-weight: bold;
+            color: #D10000;
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <div class="top-bar-container">
+            <div class="top-bar">
+                <ul>
+                    <a href="aspirantes.html"><li>Aspirantes</li></a>
+                   <a href="estudiantes.html"> <li>Estudiantes</li></a>
+                    <a href="egresados.html"><li>Egresados</li></a>
+                    <a href="docentes.html"><li>Docentes</li></a> 
+                    <li>Administrativos</li>
+                    <li>Bienestar</li>
+                    <li>Campus Virtual</li>
+                    <li>Academusoft</li>
+                    <li>Centro de Idiomas</li>
+                    <li>Biblioteca</li>
+                    <li>Pagos en línea</li>
+                    <li>Gov.co</li>
+                    <li>Transparencia</li>
+                </ul>
+            </div>
+        </div>
+		<div class="nav-container">
+            <a href="index.html">
+          <img src="/imagenes/logouniversidad.png" alt="Universidad de Córdoba Logo">
+        </a>
+        <nav>
+                <ul>
+                    <li>INSTITUCIONAL</li>
+                    <li>ACADEMIA</li>
+                    <li>INVESTIGACIÓN</li>
+                    <li>EXTENSIÓN</li>
+                    <li>ADMISIONES</li>
+                    <li>INTERNACIONALIZACIÓN</li>
+                </ul>
+            </nav>
+        </div>
+        <div class="docentes-container">Estudiantes</div>
+        <div class="submenu-container">
+            <ul>
+                <li>Campus Virtual</li>
+                <li>Bases de datos</li>
+                <li>Biblioteca</li>
+                <li>Bienestar</li>
+                <li>Calendario</li>
+                <li>Evaluación Docente</li>
+                <li>Colillas de Pago</li>
+                <li>Servicios Tic</li>
+                <li>Pagos PSE</li>
+            </ul>
+        </div>
+    </header>
+    
+    <div class="content">
+        <div class="table-container">
+            <h2>Convocatorias y Seguimiento Curricular</h2>
+            <table>
+                <tr>
+                    <th>Convocatorias</th>
+                    <th>Seguimiento Curricular</th>
+                </tr>
+                <tr>
+                    <td>
+                        <p><strong>Acuerdo 002</strong>, 20 de enero de 2025.</p>
+                        <p>Concurso público para vinculación de estudiantes de postgrado.</p>
+                        <p><strong>Inscripciones:</strong> Del 21 al 28 de enero de 2025.</p>
+                        <p><strong>Resultados:</strong> 21 de febrero de 2025.</p>
+                    </td>
+                    <td>
+                        <p><strong>Paso 5 - Responsable: Docente</strong></p>
+                        <p>Al finalizar cada corte de notas, diligenciar el formato FDC-108.</p>
+                    </td>
+                </tr>
+                <tr>
+                    <td>
+                        <p><strong>Acuerdo 001</strong>, 20 de enero de 2025.</p>
+                        <p>Concurso público para vinculación de docente catedrático.</p>
+                        <p><strong>Inscripciones:</strong> Del 21 al 28 de enero de 2025.</p>
+                        <p><strong>Resultados:</strong> 21 de febrero de 2025.</p>
+                    </td>
+                    <td>
+                        <p><strong>Paso 5 - Responsable: Docente</strong></p>
+                        <p>Al finalizar cada módulo, el docente diligencia el formato FDC-100.</p>
+                    </td>
+                </tr>
+            </table>
+        </div>
+    </div>
+</body>
+</html>
