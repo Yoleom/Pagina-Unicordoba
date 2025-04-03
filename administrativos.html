@@ -3,38 +3,32 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <img src="./imagenes/logouniversidad.png" alt="Universidad de Córdoba Logo">
-    <title>Docentes</title>
+    <title>Administrativos</title>
     <link rel="stylesheet" href="styles.css">
     <style>
-		     a {
-    color: inherit; 
-    text-decoration: none; 
-}
-
-a:hover {
-    color: #67A65E; 
-}
-
-
-.social-icons {
-            display: flex;
-            gap: 10px;
-        }
-        .social-icons a img {
-            width: 24px;
-            height: 24px;
-        }
+        /* General */
         body {
             font-family: Arial, sans-serif;
             margin: 0;
             padding: 0;
             background: #f5f5f5;
         }
+
+        a {
+            color: inherit;
+            text-decoration: none;
+        }
+
+        a:hover {
+            color: #67A65E;
+        }
+
+        /* Encabezado */
         .top-bar-container {
             background: #67A65E;
             padding: 4px 0;
         }
+
         .top-bar {
             background: #f5f5f5;
             padding: 10px 50px;
@@ -43,18 +37,21 @@ a:hover {
             align-items: center;
             flex-wrap: wrap;
         }
+
         .top-bar ul {
             list-style: none;
             padding: 0;
             margin: 0;
             display: flex;
             flex-wrap: wrap;
-            gap: 10px;
+            gap: 15px;
         }
+
         .top-bar ul li {
             color: #67A65E;
             cursor: pointer;
         }
+
         .nav-container {
             background: #fff;
             display: flex;
@@ -62,9 +59,11 @@ a:hover {
             justify-content: space-between;
             padding: 10px 50px;
         }
+
         .nav-container img {
             height: 50px;
         }
+
         nav ul {
             list-style: none;
             padding: 0;
@@ -72,26 +71,53 @@ a:hover {
             display: flex;
             gap: 20px;
         }
+
         nav ul li {
             font-weight: bold;
             color: black;
             cursor: pointer;
         }
-        .docentes-container {
-            background-color: #63BA00;
+
+        /* Administrativos */
+        .administrativos-container {
+            background-color: #F7F7F7;
             padding: 10px;
-            text-align: left;
-            color: black;
+            text-align: center;
+            font-size: 25px;
             font-weight: bold;
-            padding-left: 50px;
+            position: relative;
+            margin-bottom: 20px;
         }
+
+        .administrativos-container::before {
+            content: "";
+            display: block;
+            height: 2px;
+            background-color: #1E7D32;
+            width: 100%;
+            position: absolute;
+            top: -10px;
+        }
+
+        .administrativos-container::after {
+            content: "";
+            display: block;
+            height: 6px;
+            background-color: #67A65E;
+            width: 100%;
+            position: absolute;
+            bottom: -10px;
+        }
+
+        /* Submenú */
         .submenu-container {
-            background-color: #EFEFEF;
+            background-color: #F7F7F7;
             display: flex;
             justify-content: center;
             padding: 10px 0;
             flex-wrap: wrap;
         }
+
         .submenu-container ul {
             list-style: none;
             display: flex;
@@ -99,54 +125,70 @@ a:hover {
             padding: 0;
             margin: 0;
         }
+
         .submenu-container ul li {
-            background: #EFEFEF;
-            padding: 5px 10px;
+            background-color: #FFFFFF;
+            padding: 10px 10px;
             border: 1px solid #ddd;
             cursor: pointer;
         }
-        .container {
-            display: flex;
-            max-width: 1200px;
-            margin: 20px auto;
-            gap: 20px;
-        }
-        .column {
-            background: white;
-            padding: 15px;
-            border-radius: 5px;
-            box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.1);
-            flex: 1;
-        }
-        .column h2 {
-            background: #67A65E;
-            color: white;
+
+        /* Resolución */
+        .resolucion-container {
             padding: 10px;
-            text-align: center;
-            margin: -15px -15px 15px -15px;
-            border-top-left-radius: 5px;
-            border-top-right-radius: 5px;
-        }
-        .table-container {
-            width: 100%;
-        }
-        table {
-            width: 100%;
-            border-collapse: collapse;
             font-size: 14px;
-        }
-        th, td {
+            text-align: center;
+            background-color: #FFFFFF;
             border: 1px solid #ddd;
-            padding: 8px;
-            text-align: left;
+            margin-top: 10px;
         }
-        th {
-            background: #67A65E;
-            color: white;
+
+        /* Contenedor de documentos */
+        .document-container {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            margin-top: 20px;
+            width: 100%;
         }
-        .highlight {
+
+        .document-container embed {
+            width: 80%;
+            height: 600px;
+            border: 1px solid #ddd;
+        }
+
+        /* Pestañas */
+        .tab-container {
+            display: flex;
+            justify-content: left;
+            border-bottom: 2px solid #67A65E;
+            margin-top: 20px;
+            padding-left: 10%;
+        }
+
+        .tab {
+            padding: 10px 20px;
+            cursor: pointer;
             font-weight: bold;
-            color: #D10000;
+            color: black;
+            background-color: #F7F7F7;
+            border: 1px solid #ddd;
+            border-bottom: none;
+            transition: background-color 0.3s ease;
+        }
+
+        .tab.active {
+            background-color: white;
+            border-top: 3px solid #67A65E;
+        }
+        .social-icons {
+            display: flex;
+            gap: 10px;
+        }
+        .social-icons a img {
+            width: 24px;
+            height: 24px;
         }
     </style>
 </head>
@@ -156,9 +198,9 @@ a:hover {
             <div class="top-bar">
                 <ul>
                     <a href="aspirantes.html"><li>Aspirantes</li></a>
-                   <a href="estudiantes.html"> <li>Estudiantes</li></a>
+                    <a href="estudiantes.html"><li>Estudiantes</li></a>
                     <a href="egresados.html"><li>Egresados</li></a>
-                    <a href="docentes.html"><li>Docentes</li></a> 
+                    <a href="docentes.html"><li>Docentes</li></a>
                     <a href="administrativos.html"><li>Administrativos</li></a>
                     <li>Bienestar</li>
                     <li>Campus Virtual</li>
@@ -178,11 +220,12 @@ a:hover {
                 </div>
             </div>
         </div>
-		<div class="nav-container">
+
+        <div class="nav-container">
             <a href="index.html">
-          <img src="/imagenes/logouniversidad.png" alt="Universidad de Córdoba Logo">
-        </a>
-        <nav>
+                <img src="/imagenes/logouniversidad.png" alt="Universidad de Córdoba Logo">
+            </a>
+            <nav>
                 <ul>
                     <li>INSTITUCIONAL</li>
                     <li>ACADEMIA</li>
@@ -193,56 +236,30 @@ a:hover {
                 </ul>
             </nav>
         </div>
-        <div class="docentes-container">Estudiantes</div>
+
+        <div class="administrativos-container">ADMINISTRATIVOS</div>
+
         <div class="submenu-container">
             <ul>
-                <li>Campus Virtual</li>
-                <li>Bases de datos</li>
-                <li>Biblioteca</li>
-                <li>Bienestar</li>
-                <li>Calendario</li>
-                <li>Evaluación Docente</li>
-                <li>Colillas de Pago</li>
-                <li>Servicios Tic</li>
-                <li>Pagos PSE</li>
+                <li>Correo institucional</li>
+                <li>Collillas de pago</li>
+                <li>Evaluación de desempeño</li>
+                <li>Servicios TIC</li>
             </ul>
         </div>
     </header>
-    
-    <div class="content">
-        <div class="table-container">
-            <h2>Convocatorias y Seguimiento Curricular</h2>
-            <table>
-                <tr>
-                    <th>Convocatorias</th>
-                    <th>Seguimiento Curricular</th>
-                </tr>
-                <tr>
-                    <td>
-                        <p><strong>Acuerdo 002</strong>, 20 de enero de 2025.</p>
-                        <p>Concurso público para vinculación de estudiantes de postgrado.</p>
-                        <p><strong>Inscripciones:</strong> Del 21 al 28 de enero de 2025.</p>
-                        <p><strong>Resultados:</strong> 21 de febrero de 2025.</p>
-                    </td>
-                    <td>
-                        <p><strong>Paso 5 - Responsable: Docente</strong></p>
-                        <p>Al finalizar cada corte de notas, diligenciar el formato FDC-108.</p>
-                    </td>
-                </tr>
-                <tr>
-                    <td>
-                        <p><strong>Acuerdo 001</strong>, 20 de enero de 2025.</p>
-                        <p>Concurso público para vinculación de docente catedrático.</p>
-                        <p><strong>Inscripciones:</strong> Del 21 al 28 de enero de 2025.</p>
-                        <p><strong>Resultados:</strong> 21 de febrero de 2025.</p>
-                    </td>
-                    <td>
-                        <p><strong>Paso 5 - Responsable: Docente</strong></p>
-                        <p>Al finalizar cada módulo, el docente diligencia el formato FDC-100.</p>
-                    </td>
-                </tr>
-            </table>
-        </div>
+
+    <div class="resolucion-container">
+        Resolución 0702, del 23 de abril de 2024. Por la cual se modifica la Resolución 1928 de 2021 “Por la cual se adopta el manual de funciones y competencias laborales de la Universidad de Córdoba”, ajustada y corregida mediante Resolución 0603, de 2023. Publicado: 25 de abril de 2024.
+    </div>
+
+    <div class="tab-container">
+        <div class="tab active">Comunicado</div>
+        <div class="tab">Convocatorias anteriores</div>
+    </div>
+
+    <div class="document-container">
+        <embed src="/Documentos/Comunicado Administrativos.pdf" type="application/pdf" />
     </div>
 </body>
 </html>
